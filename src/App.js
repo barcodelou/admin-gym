@@ -2,7 +2,7 @@
 
 import Navbar from './component/navbar';
 import { Route, Routes} from "react-router-dom";
-import {Homepage,Costumer,ClassOnline,ClassOffline,Booking, SignIn} from "./page"
+import {Homepage,Costumer,ClassOnline,ClassOffline,Booking, SignIn,News} from "./page"
 function App() {
   return (
     <div className="App">
@@ -14,6 +14,7 @@ function App() {
         <Route path="/booking" exact element={<Booking />}/>
         <Route path="/costumer" exact element={<Costumer />}/>
         <Route path="/sign-in" exact element={<SignIn />}/>
+        <Route path="/News" exact element={<News />}/>
       </Routes>
     </div>
   );
