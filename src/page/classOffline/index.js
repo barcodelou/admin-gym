@@ -6,9 +6,9 @@ const ClassOffline = () => {
   return (
     <div>
       <h1 className="text-center m-4">Class Offline Management Sistem</h1>
-      <h3 className="m-4">Add Class</h3>
+      <h3 className="text-center m-4">You can manage your class here</h3>
       <Form />
-      <h3 className="m-4">Card Class</h3>
+      <h3 className="text-center m-4">List All Offline Class</h3>
       <Placing />
     </div>
   );

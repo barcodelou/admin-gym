@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from "react-router-dom";
 import Logo from "./Logo.png"
 
-const pages = [{ item: 'Class Online', url: "/class-online" }, { item: 'Class Offline', url: "/class-offline" }, { item: 'Costumer', url: '/costumer' }, { item: 'Booking', url: "/booking" }, { item: 'News', url: "/news" }];
+const pages = [{ item: 'Class Online', url: "/class-online" }, { item: 'Class Offline', url: "/class-offline" }, { item: 'User Management', url: '/user' }, { item: 'Booking', url: "/booking" }, { item: 'News', url: "/news" }];
 // const pages = ['Products', 'Pricing', 'Blog'];
 
 

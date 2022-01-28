@@ -14,11 +14,11 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Placing() {
   return (
-    <Box sx={{ flexGrow: 1 , margin:4 }}>
-      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+    <Box sx={{ flexGrow: 5, margin: 2 }}>
+      <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} className='mx-auto'>
         {Array.from(Array(12)).map((_, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>
-            <Card/>
+          <Grid item key={index}>
+            <Card />
           </Grid>
         ))}
       </Grid>
