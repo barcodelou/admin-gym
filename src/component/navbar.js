@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from "react-router-dom";
+import Logo from "./Logo.png"
 
 const pages = [{ item: 'Class Online', url: "/class-online" }, { item: 'Class Offline', url: "/class-offline" }, { item: 'Costumer', url: '/costumer' }, { item: 'Booking', url: "/booking" }, { item: 'News', url: "/news" }];
 // const pages = ['Products', 'Pricing', 'Blog'];
@@ -36,8 +37,8 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="static" >
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -79,7 +80,7 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page.item} onClick={handleCloseNavMenu}>
-                  <Link to={page.url}>{page.item}</Link>
+                  <Link to={page.url} className="text-black text-lg font-medium ">{page.item}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -90,20 +91,17 @@ const Navbar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            LOGO
+            Management
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} >
             {pages.map((page) => (
               <Link
                 to={page.url}
                 key={page.item}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', }}
+                className="text-white text-lg font-medium m-4 "
               >
-
                 {page.item}
-
-
               </Link>
             ))}
           </Box>
